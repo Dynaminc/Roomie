@@ -1,10 +1,10 @@
-import { HStack, ScrollView, VStack, Text, Box , Button, Flex, Input, KeyboardAvoidingView, Spacer, Container} from "native-base"
+import { HStack, ScrollView, VStack, Text, Box , Button, Flex, Input, KeyboardAvoidingView, Spacer, Container, Center} from "native-base"
 import { Circle } from "react-native-svg";
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 const DashNotifications =({navigation}) =>{
     return(
-            <HStack style={{ flex: 1 }}  w={'full'} justifyContent={'center'}>
+            <HStack style={{ flex: 1 }}  w={'full'} justifyContent={'center'}  bg={'white'}>
                 
             <VStack  w={['full','90%', '70%','60%','40%']} p={4} justifyContent={'center'} alignItems={'center'}> 
             
@@ -27,15 +27,14 @@ const DashNotifications =({navigation}) =>{
                 <ScrollView style={{ flex: 1 }}  w={'full'} bg={'white'} py={2}>
                     <HStack borderWidth={1} rounded={'lg'} borderColor={'gray.200'} my={2}
                      shadow={'sm'}  alignItems={'center'} p={4}>
-                        <Box h={10} w={10}  bg={'gray.200'} rounded={'full'} />
-                        <Container p={1} fontSize={'lg'}>
-                            <HStack>
-                                <Text color={'purple.800'} fontSize={'sm'} mx={1}>@Maytt Layman</Text>
-                                <Text color={'gray.600'} fontSize={'sm'}>Just sent you a chat request</Text>
-                            </HStack>
-                        </Container>
+                        <Box h={9} w={9}  bg={'gray.200'} rounded={'full'} />
+
+                        <Text color={'gray.600'} > @Maytt Layman Just sent you a chat request
+                        </Text>
+
+                    
                         <Spacer />
-                        <Flex direction={'row-reverse'} >
+                        <Flex direction={'row-reverse'} p={2} >
                             <Box>
                                 <Text fontWeight={'medium'} fontSize={'xs'}>Today</Text>
                                 <Text fontSize={'xs'}>17:31</Text>
@@ -45,14 +44,11 @@ const DashNotifications =({navigation}) =>{
                     <HStack borderWidth={1} rounded={'lg'} borderColor={'gray.200'} my={2}
                      shadow={'sm'}  alignItems={'center'} p={4}>
                         <Box h={10} w={10}  bg={'gray.200'} rounded={'full'} />
-                        <Container p={1} fontSize={'lg'}>
-                            <HStack>
-                                <Text color={'purple.800'} fontSize={'sm'} mx={1}>@Aga dev</Text>
-                                <Text color={'gray.600'} fontSize={'sm'}>Just sent you a chat request</Text>
-                            </HStack>
-                        </Container>
+                        <Text color={'gray.600'} > @Maytt Layman Just sent you a chat request
+                        </Text>
+                
                         <Spacer />
-                        <Flex direction={'row-reverse'} >
+                        <Flex direction={'row-reverse'} p={2}>
                             <Box>
                                 <Text fontWeight={'medium'} fontSize={'xs'}>Today</Text>
                                 <Text fontSize={'xs'}>17:31</Text>

@@ -3,7 +3,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 
 const DashFilter =({navigation}) =>{
     return(
-        <ScrollView style={{ flex: 1 }}  w={'full'}>
+        <ScrollView style={{ flex: 1 }}  w={'full'}  bg={'white'}>
             <HStack style={{ flex: 1 }}  w={'full'} justifyContent={'center'}  bg={'white'}>
                 
             <VStack  w={['full','80%', '70%','50%','40%']} p={4} justifyContent={'center'} alignItems={'center'}> 

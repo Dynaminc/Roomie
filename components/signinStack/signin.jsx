@@ -1,5 +1,5 @@
 import { Flex, Box, Heading, Text,Input, Button, VStack, HStack, KeyboardAvoidingView, Spacer } from 'native-base'
-const SignIn = ([navigation]) =>{
+const SignIn = ({navigation}) =>{
     return(
         
         <HStack style={{ flex: 1 }}  w={'full'} justifyContent={'center'} bg={'white'}>

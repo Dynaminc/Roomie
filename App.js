@@ -33,7 +33,7 @@ export default function App() {
           headerShown: false
         }}
         >
-          <Stack.Screen name="Mytabs" component={MyTabs} />
+          
         <Stack.Screen name="Splash" component={SplashScreen} />
 
         <Stack.Screen name="Onboarding1" component={OnboardingScreen1} />
@@ -48,6 +48,7 @@ export default function App() {
         <Stack.Screen name="Profile2" component={ProfileScreen2} />
         <Stack.Screen name="ProfileComplete" component={ProfileScreen3} />
 
+        <Stack.Screen name="Mytabs" component={MyTabs} />
         
 
       </Stack.Navigator>
