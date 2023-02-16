@@ -9,9 +9,11 @@ const DashRequestSent =({navigation}) =>{
                 <Box h={96} bg={'gray.100'} w={'full'} ></Box>
                 <Text fontSize={'lg'} color={'gray.500'} py={2}>Chat Request Sent Successfully</Text>
                 <Button rounded={'full'} w={'full'} bg={'purple.800'} my={2} py={4} onPress={()=>{
-                    navigation.navigate('Landing')
+                    navigation.goBack()
                 }}>
-                    <Text fontSize={'sm'} color={'white'} fontWeight={'medium'}>DONE</Text>
+                    <Text fontSize={'sm'} color={'white'} fontWeight={'medium'}
+                        
+                    >DONE</Text>
                 </Button>      
                     
                     

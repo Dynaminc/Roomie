@@ -19,7 +19,11 @@ const DashLanding =({navigation}) =>{
                                 Good morning
                             </Text>
                         </Box>
-                        <Button rounded={'full'} h={12} w={12}  bg={'purple.200'} shadow={'sm'}> 
+                        <Button rounded={'full'} h={12} w={12}  bg={'purple.200'} shadow={'sm'}
+                            onPress={()=>{
+                                navigation.navigate('Notification')
+                            }}
+                        > 
                             <Icon
                                 name={'bell'}
                                 size={16}
@@ -41,8 +45,10 @@ const DashLanding =({navigation}) =>{
                             <Text fontWeight={'medium'} fontSize={'sm'} color={'purple.800'}>Apartment</Text>
                         </Button>
                     </Flex>
-                    <Flex direction= {'row'} gap={2} h={8} w={'full'} mt={8}>
-                        <Input  w={'85%'}  mr={2} bg={'gray.200'} />
+                    <Flex direction= {'row'} gap={2} h={10} w={'full'} mt={8}>
+                    <Input bg={'gray.100'}  w={'85%'} mr={2} fontSize={'sm'} borderWidth={0} placeholder="Search"
+                InputLeftElement={<Box p={2} color={'gray.200'}><Icon name="search" size={20} /></Box>}/>
+                        
                         <Button w={['15%','10%']} variant={'subtle'} color={'white'} bg={'gray.200'} gap={2}
                             onPress={()=>{
                                 navigation.navigate('Filter')

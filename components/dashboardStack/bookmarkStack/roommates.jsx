@@ -2,7 +2,7 @@ import { HStack, ScrollView, VStack, Text, Box , Button, Flex, Input, KeyboardAv
 import { Circle } from "react-native-svg";
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-const Roommate =()=>{
+const Roommate =({navigation})=>{
     const chat = [
         {
             id: 1,
@@ -47,7 +47,11 @@ const Roommate =()=>{
                                             <Text color={'xs'}>budget</Text>
                                         </HStack>
                                         <Spacer />
-                                        <Button variant={'ghost'} p={0}>
+                                        <Button variant={'ghost'} p={0}
+                                        onPress={()=>{
+                                            navigation.navigate('Requestsent')
+                                        }}
+                                        >
                                             <Flex direction={'row'} alignItems={'center'} p={1}> 
                                                 <Text color={'purple.800'} fontSize={'sm'}  mr={1}>Send Chat Request</Text>
                                                 <Icon name={'arrow-right'} color={'purple.800'}/> 

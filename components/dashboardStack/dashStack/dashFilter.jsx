@@ -8,9 +8,10 @@ const DashFilter =({navigation}) =>{
                 
             <VStack  w={['full','80%', '70%','50%','40%']} p={4} justifyContent={'center'} alignItems={'center'}> 
 
-                <Box mt={8} position={'relative'} bg={'red.200'}>
-                    <Button variant={'unstyled'}> <Icon name={'arrow-left'}
-                        position={'absolute'} left={0} top={0}
+                <VStack mt={8} position={'relative'} w={'full'} alignItems={'center'} justifyContnt={'center'}>
+                    
+                    <Button variant={'unstyled'} position={'absolute'}  left={0} top={0}> 
+                        <Icon name={'arrow-left'}
                         onPress={()=>{
                         navigation.goBack()
                         }}
@@ -18,7 +19,7 @@ const DashFilter =({navigation}) =>{
                     <Text fontSize={'xl'} fontWeight={'medium'}>  
                         Filter
                     </Text>
-                </Box>
+                </VStack>
 
                 
                 <KeyboardAvoidingView w={'full'} mt={4}>

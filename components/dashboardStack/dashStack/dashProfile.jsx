@@ -12,9 +12,18 @@ const DashProfile =({navigation}) =>{
             <HStack style={{ flex: 1 }}  w={'full'} justifyContent={'center'}>
                 
             <VStack  w={['full','90%', '80%','70%','50%']} p={4} justifyContent={'center'} alignItems={'center'}> 
-                <Text fontSize={'xl'} fontWeight={'medium'} mt={[4,5,6,8]} >  
-                    Profile
-                </Text>
+            <VStack mt={8} position={'relative'} w={'full'} alignItems={'center'} justifyContnt={'center'}>
+                    
+                    <Button variant={'unstyled'} position={'absolute'}  left={0} top={0}> 
+                        <Icon name={'arrow-left'}
+                        onPress={()=>{
+                        navigation.goBack()
+                        }}
+                    /></Button>
+                    <Text fontSize={'xl'} fontWeight={'medium'}>  
+                        Profile
+                    </Text>
+                </VStack>
 
                 <Box rounded={'2xl'} h={40} bg={'gray.200'} w={'full'} mt={8}>
                     
@@ -55,7 +64,10 @@ const DashProfile =({navigation}) =>{
                 </ScrollView>
 
                 <Button rounded={'full'} w={'full'} bg={'purple.800'} mt={2}>
-                    <Text fontSize={'sm'} color={'white'} onPress={()=>{navigation.navigate('Request_Sent')}}
+                    <Text fontSize={'sm'} color={'white'} 
+                        onPress={()=>{
+                            navigation.navigate('Requestsent')
+                        }}
                     >
                         SEND CHAT REQUEST</Text>
                 </Button>                   

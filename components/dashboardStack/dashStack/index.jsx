@@ -25,7 +25,7 @@ const DashHome =() =>{
         <Stack.Screen name="Profile" component={DashProfile} />
         <Stack.Screen name="Filter" component={DashFilter} />
         <Stack.Screen name="Notification" component={DashNotifications} />
-        <Stack.Screen name="Request_Sent" component={DashRequestSent} />
+        <Stack.Screen name="Requestsent" component={DashRequestSent} />
       </Stack.Navigator>
 
 
